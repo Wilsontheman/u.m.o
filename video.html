@@ -1,0 +1,75 @@
+	<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<h2 class="w3-wide">VIDEO COLLECTION</h2>
+	   <div class="row">
+  <div class="column">
+  <video src="v1.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+  <video src="v3.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+  <video src="v4.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+  <video src="v5.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+   </div>
+    <div class="column">
+  <video src="v6.mp4"style="width:30%" controls> Sorry your browser does not support embedding videos. </video>
+  <video src="v7.mp4"style="width:30%" controls> Sorry your browser does not support embedding videos. </video>
+  <video src="v8.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+  <video src="v9.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+   </div>
+    <div class="column">
+  <video src="v10.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+  <video src="v11.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+  <video src="v12.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+  <video src="v13.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+  </div>
+    <div class="column">
+  <video src="v14.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+  
+  <video src="v15.mp4"style="width:30%" controls> Sorry your browser does not support embedding videos. </video>
+  <video src="v16.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+  <video src="v17.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+  <video src="v18.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+  </div>
+    <div class="column">
+  <video src="v19.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+  <video src="v21.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+  <video src="v22.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+  <video src="v23.mp4"style="width:40%" controls> Sorry your browser does not support embedding videos. </video>
+  </div>
+     </div>
+
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a "loop" variable
+var i;
+
+// Full-width images
+function one() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "25%";
+  }
+}
+</script>
+</body>
+</html>
