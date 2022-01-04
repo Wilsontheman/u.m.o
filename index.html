@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+<style>
+
+			
+* {box-sizing: border-box;}
+
+body {font-family: Verdana, sans-serif;
+     
+}
+   
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 350px;
+  position: relative;
+  margin: auto;
+}
+
+//* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+ }
+
+ 
+ /* fading animation */
+ .fade{
+ -webkit-animation-name:fade;
+ -webkit-animation-duration:1.5s;
+ animation-name:fade;
+ animation-duration:1.5s;
+ }
+ @-webkit-keyframes fade{
+    from{opacity:.4}
+     to{opacity:1}
+     }
+ @keyframes fade{
+ from{opacity:.4}
+ to{opacity:1}
+ }
+ /* on smaller screens, decrease text size */
+ @media only screen and(max-width:300px){
+ .text{font-size:11px}
+ }
+
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+	#name
+  	{
+  	font-family: Times New Roman;
+  	text-color:black;
+  	font-size:30px;
+  	background-color:white;
+  	color:black;
+  	border: 1px solid red;
+  	padding:5x;
+  	width:100%;
+  	}
+</style>
+ </head>
+ <body background-color:red;>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+  				 <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  				
+   
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="#umojamaica"class="w3-bar-item w3-button w3-padding-large w3-hide-small">UMOJAMAICA</a>
+       <a href="#portfolio"class="w3-bar-item w3-button w3-padding-large w3-hide-small">PORTFOLIO</a>
+        <a href="#crew" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CREW</a>    
+           <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+          <a href="#gallery" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
+       
+    <a href="#video"class="w3-bar-item w3-button w3-padding-large w3-hide-small">VIDEO COLLECTION</a>
+   
+  
+
+<a href="#onlinebooking" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ONLINE BOOKING</a>  
+
+  <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>  
+ </div>
+ </div>
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+ <a href="#umojamaica" class="w3-bar-item w3-button w3-padding-large"onclick="myFunction()">UMOJAMAICA</a>
+ <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large"onclick="myFunction()">PORTFOLIO</a>
+   <a href="#crew" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"  >CREW</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"  >CONTACT</a>
+
+  <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GALLERY</a>
+    <a href="video.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"  >VIDEO COLLECTION</a>
+
+
+
+ <a href="book.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ONLINE BOOKING</a>
+ </div>
+	
+
+ <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+   <div class="mySlides fade">
+   
+    <img src="5.jpg" style="width:100%">
+   
+  </div>
+  <div class="mySlides fade">
+   
+    <img src="2.jpg" style="width:100%">
+   
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="3.jpg" style="width:100%">
+ 
+  </div>
+
+  <div class="mySlides fade">
+ 
+    <img src="4.jpg" style="width:100%">
+   
+  </div>
+   <div class="mySlides fade">
+ 
+    <img src="1.jpg" style="width:100%">
+   
+  </div>
+   <div class="mySlides fade">
+ 
+    <img src="6.jpg" style="width:100%">
+   
+  </div>
+  <div class="mySlides fade">
+ 
+    <img src="7.jpg" style="width:100%">
+   
+  </div>
+  
+
+   <div class="mySlides fade">
+ 
+    <img src="9.jpg" style="width:100%">
+   
+  </div>
+   <div class="mySlides fade">
+ 
+    <img src="10.jpg" style="width:100%">
+   
+  </div>
+   <div class="mySlides fade">
+ 
+    <img src="11.jpg" style="width:100%">
+   
+  </div>
+   <div class="mySlides fade">
+ 
+    <img src="12.jpg" style="width:100%">
+   
+  </div>
+   <div class="mySlides fade">
+ 
+    <img src="13.jpg" style="width:100%">
+   
+  </div>
+   <div class="mySlides fade">
+ 
+    <img src="14.jpg" style="width:100%">
+   
+  </div>
+   <div class="mySlides fade">
+ 
+    <img src="15.jpg" style="width:100%">
+   
+  </div>
+   <div class="mySlides fade">
+ 
+    <img src="16.jpg" style="width:100%">
+   
+  </div>
+  
+   <div class="mySlides fade">
+ 
+    <img src="17.jpg" style="width:100%">
+   
+  </div>
+  
+   <div class="mySlides fade">
+ 
+    <img src="18.jpg" style="width:100%">
+   
+  </div>
+  
+   <div class="mySlides fade">
+ 
+    <img src="19.jpg" style="width:100%">
+   
+  </div>
+  
+  
+   <div class="mySlides fade">
+ 
+    <img src="20.jpg" style="width:100%">
+   
+  </div>
+  
+  
+   <div class="mySlides fade">
+ 
+    <img src="21.jpg" style="width:100%">
+   
+  </div>
+  
+  
+   <div class="mySlides fade">
+ 
+    <img src="22.jpg" style="width:100%">
+   
+  </div>
+  
+  
+   <div class="mySlides fade">
+ 
+    <img src="23.jpg" style="width:100%">
+   
+  </div>
+  
+  
+   <div class="mySlides fade">
+ 
+    <img src="24.jpg" style="width:100%">
+   
+  </div>
+  
+  
+   <div class="mySlides fade">
+ 
+    <img src="25.jpg" style="width:100%">
+   
+  </div>
+  
+  
+   <div class="mySlides fade">
+ 
+    <img src="26.jpg" style="width:100%">
+   
+  </div>
+  
+  
+   <div class="mySlides fade">
+ 
+    <img src="27.jpg" style="width:100%">
+   
+  </div>
+  
+  
+   <div class="mySlides fade">
+ 
+    <img src="28.jpg" style="width:100%">
+   
+  </div>
+  
+  
+   <div class="mySlides fade">
+ 
+    <img src="29.jpg" style="width:100%">
+   
+  </div>
+  
+  
+   <div class="mySlides fade">
+ 
+    <img src="30.jpg" style="width:100%">
+   
+  </div>
+  
+  
+   <div class="mySlides fade">
+ 
+    <img src="55.jpg" style="width:100%">
+   
+  </div>
+  
+  
+   <div class="mySlides fade">
+ 
+    <img src="40.jpg" style="width:100%">
+   
+  </div>
+  
+  
+   <div class="mySlides fade">
+ 
+    <img src="62.jpg" style="width:100%">
+   
+  </div>
+   </div>
+<div class="w3-container w3-content w3-center w3-padding-64"style="max-width:800px"id="umojamaica">
+<h2 class="w3-wide">UMOJAMAICA</h2>
+<p class="w3-opacity"><i> U.M.O GVNG</i></p>
+  <p class="w3-justify">UMOJAMAICA alias shuffle is a recording and  performing artist, working professionally with YUNG G under producer known as CODA.</p>
+    <p class="w3-justify">UMOJAMAICA is also an entertainer,singer and song writer</p>
+    <p class="w3-justify"> These are some and latest videos and audios.
+     For more videos and audios, subscribe and watch  in YOUTUBE at
+        
+
+       @U.M.O GVNG :</p>
+   <div class="row">
+  <div class="column">
+  <video src="v.mp4"style="width:60%" controls> Sorry your browser does not support embedding videos. </video>
+  </div>
+  <div class="column">
+     <video src="v5.mp4"style="width:60%" controls> Sorry your browser does not support embedding videos. </video>
+     </div>
+     </div>
+       <div class="row">
+  <div class="column">
+         <video src="v2.mp4"style="width:60%" controls> Sorry your browser does not support embedding videos. </video>
+   </div>
+   </div>
+    <div class="row">
+  <div class="column">
+             <video src="v20.mp4"style="width:60%" controls> Sorry your browser does not support embedding videos. </video>
+   </div>
+     <div class="column">
+             <video src="v19.mp4"style="width:60%" controls> Sorry your browser does not support embedding videos. </video>
+      </div>
+   </div>
+     
+<p class="w3-justify"> Great amd humble artist working on variety of music genre including:</p>
+      <li>
+      <ol> Gengetone</ol>
+      <ol> Drill</ol>
+      <ol> Hip-hop</ol>
+      <ol> Dancehall</ol>
+      </li>
+      </div>
+      <br>
+      <br>
+       <div class="w3-container w3-content w3-center w3-padding-64"style="max-width:800px"id="portfolio">
+         <!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="2.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>UMOJAMAICA</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>PERFORMING ARTIST</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>NAIROBI, KENYA</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+254 748 992572</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>GENGETONE</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>DRILL</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">85%
+            
+            </div>
+          </div>
+          <p>DANCEHALL</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>HIPHOP</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:88%">88%</div>
+          </div>
+           </div>
+             </div>
+            </div>
+             </div>
+            </div>   
+          
+          <br>
+         
+         
+      <div class="w3-container w3-content w3-center w3-padding-64"style="max-width:800px"id="crew">
+      <h2 class="w3-wide">THE CREW</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>U.M.O GVNG</p>
+      
+        	<div class="row">
+  <div class="column">
+    <img src="31.jpg"style="width:40%;">
+   <img src="39.jpg"style="width:40%;">
+    <img src="40.jpg"style="width:50%;">
+    <img src="41.jpg"style="width:40%;">
+  </div>
+  <div class="column">
+      <img src="42.jpg"style="width:40%;">
+   <img src="43.jpg"style="width:40%;">
+    <img src="44.jpg"style="width:50%;">
+    <img src="45.jpg"style="width:40%;">  
+   
+  </div>
+   <div class="column">
+    <img src="46.jpg"style="width:40%;">
+   <img src="47.jpg"style="width:40%;">
+    <img src="48.jpg"style="width:50%;">
+    <img src="49.jpg"style="width:40%;">
+  </div>
+  
+ 
+ 
+   <div class="column">
+    <img src="50.jpg"style="width:40%;">
+   <img src="51.jpg"style="width:40%;">
+    <img src="52.jpg"style="width:50%;">
+      </div>
+      
+       <div class="column">
+    <img src="53.jpg"style="width:40%;">
+   <img src="54.jpg"style="width:40%;">
+    <img src="55.jpg"style="width:50%;">
+      </div>
+       <div class="column">
+    <img src="56.jpg"style="width:40%;">
+   <img src="57.jpg"style="width:40%;">
+    <img src="58.jpg"style="width:50%;">
+      </div>
+      </div>
+      <div class="w3-third">
+        <p>YUNG G</p>
+        	<div class="row">
+  <div class="column">
+        <img src="32.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+       <div class="column">
+       <img src="33.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+       </div>
+       
+        <div class="column">
+        <img src="34.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        </div>
+        </div>
+      <div class="w3-third">
+        <p>CODA</p>
+        	<div class="row">
+  <div class="column">
+        <img src="35.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+       <div class="column">
+       <img src="36.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+       </div>
+       
+        <div class="column">
+        <img src="38.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="w3-container w3-content w3-center w3-padding-64"style="max-width:800px"id="contact">
+				<link rel="stylesheet" href="index.css">
+ <div class="container">
+        <h2>Contact Us</h2>
+        <form method="POST" name="contact" data-netlify="true">
+          <script type="text/javascript">
+function ValidateForm(frm) {
+  if (frm.Firstname.value == "") { alert('Firstname' is required.'); frm.Firstname.focus(); return false; }
+if (frm.Lastname.value == "") { alert('Lastname' is required.'); frm.Lastname.focus(); return false; }
+if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.message.value == "") { alert('Please enter comments or questions.'); frm.message.focus(); return false; }
+return true; }
+</script>
+<table>
+          <tr> <td>  
+          <label for="firstname">First Name</label>
+          </td> <td>
+          <input type="text" id="firstname" name="Firstname"
+            placeholder="Your name.." required>
+            </td> </tr> <tr> <td>
+          <label for="lastname">Last Name</label>
+          </td> <td>
+          <input type="text" id="lastname" name="Lastname" 
+            placeholder="Your last name.." required>
+               </td> </tr> <tr> <td>
+          <label for="email">Email</label>
+       </td> <td>
+          <input type="email" id="email" name="Email"     
+            placeholder="Your email address.." required>
+               </td> </tr> <tr> <td>
+          <label for="message">Message</label> 
+             </td> <td>
+          <textarea id="message" name="Subject" 
+            placeholder="Write something.." required></textarea>
+             </td> </tr> <tr> <td>
+          <button type="submit"> Submit </button>
+          </table>
+        </form>
+      </div>
+</div>		
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+              
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a "loop" variable
+var i;
+
+// Full-width images
+function one() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "25%";
+  }
+}
+</script>
+  <div id="name"><marquee behavior="scroll"
+direction= "left"scrollamount="20" ><img src="wilson1.jpg"width="50"height="50">© WILLYWAILER2021{more updates loading}</marquee></div>
+
+</body>
+</html>
